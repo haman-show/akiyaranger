@@ -4,3 +4,77 @@ Author: YoheiTerashima
 Author URI: https://akiyaranger.com
 Description: 空家レンジャーのホームページ用テーマ
 */
+/* reset */
+img {
+	vertical-align:bottom;
+}
+p {
+  margin: 0;
+}
+/* common */
+body {
+  font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.fl-left {
+  float: left;
+}
+.fl-right {
+  float: right;
+}
+.container .message {
+  color: #333;
+}
+div {
+ text-align: center;
+}
+header {
+  background: #e8d64f;
+}
+.logo {
+  display: inline-block;
+}
+@media (max-width: 1000px) {
+  .pc-none {
+    display: none !important;
+  }
+  .responsive-img {
+    width: 100%;
+    height: auto;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .container .logo {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .sp-none {
+    display: none !important;
+  }
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+    display: table;
+  }
+  header {
+    padding: 2rem 0;
+  }
+  .container .logo,
+  .container .message {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .container .logo {
+    text-align: left;
+  }
+  .container .message {
+    text-align: right;
+    font-size: 2rem;
+  }
+}
