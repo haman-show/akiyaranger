@@ -66,6 +66,10 @@ header .logo {
   .sp-none {
     display: none !important;
   }
+  .responsive-img {
+    width: 100%;
+    height: auto;
+  }
 }
 /* nav-drawer */
 #nav-drawer {
@@ -166,16 +170,16 @@ header .logo {
   color: inherit;
 }
 #nav-content nav a hr {
-  border: .5px solid #ccc;
+  border: .5px dashed #ccc;
 }
 /* section */
+@media (max-width: 1000px) {
+}
+@media (min-width: 1000px) {
 section .container {
   width: 1000px;
   margin: 0 auto;
 }
-@media (max-width: 1000px) {
-}
-@media (min-width: 1000px) {
 }
 /* main-content */
 .main-content {

@@ -20,17 +20,17 @@
             <label class="nav-unshown" for="nav-input">MENU</label>
           </div>
           <nav>
-            <a href="">
+            <a href="<?php echo home_url(); ?>">
               <div class="jp">空家レンジャー</div>
               <hr>
               <div class="eng">AKIYA RANGER</div>
             </a>
-            <a href="">
+            <a href="<?php echo home_url('/hayamafactory'); ?>">
               <div class="jp">葉山ファクトリー</div>
               <hr>
               <div class="eng">HAYAMA FACTORY</div>
             </a>
-            <a href="">
+            <a href="<?php echo home_url('/hayamakitchen'); ?>">
               <div class="jp">葉山キッチン</div>
               <hr>
               <div class="eng">HAYAMA KITCHEN</div>
