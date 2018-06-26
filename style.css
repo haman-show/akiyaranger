@@ -175,17 +175,23 @@ header .logo {
 }
 /* section */
 @media (max-width: 990px) {
+footer .container,
 section .container {
   padding: 0 1rem;
 }
 }
 @media (min-width: 990px) {
+footer .container,
 section .container {
   width: 960px;
   margin: 0 auto;
 }
 }
 /* main-content */
+.main-content {
+  padding-top: 75px;
+}
+/* footer */
 .main-content {
   padding-top: 75px;
 }
