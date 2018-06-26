@@ -33,6 +33,7 @@ header {
   top: 0;
   left: 0;
   background: #e8d64f;
+  z-index: 98;
 }
 header .container {
   display: table;
@@ -53,7 +54,7 @@ header .logo {
   width: 20%;
   text-align: center;
 }
-@media (max-width: 1000px) {
+@media (max-width: 990px) {
   .pc-none {
     display: none !important;
   }
@@ -62,7 +63,7 @@ header .logo {
     height: auto;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 990px) {
   .sp-none {
     display: none !important;
   }
@@ -173,15 +174,33 @@ header .logo {
   border: .5px dashed #ccc;
 }
 /* section */
-@media (max-width: 1000px) {
-}
-@media (min-width: 1000px) {
+@media (max-width: 990px) {
 section .container {
-  width: 1000px;
+  padding: 0 1rem;
+}
+}
+@media (min-width: 990px) {
+section .container {
+  width: 960px;
   margin: 0 auto;
 }
 }
 /* main-content */
 .main-content {
-  padding-top: 60px;
+  padding-top: 75px;
+}
+/* fb-plugin */
+.fb-plugin-holder .fb-plugin-cell {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+@media (min-width: 990px) {
+.fb-plugin-holder .fb-plugin-cell {
+  float: left;
+  width: 310px;
+  margin-right: 15px;
+}
+.fb-plugin-holder .fb-plugin-cell:last-child {
+  margin-right: 0;
+}
 }
