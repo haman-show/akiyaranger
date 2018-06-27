@@ -210,3 +210,81 @@ section .container {
   margin-right: 0;
 }
 }
+/* comp-formui */
+.comp-formui {
+  margin-bottom: 3rem;
+}
+.comp-formui .line {
+  margin-bottom: 1rem;
+}
+.comp-formui .line .body select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: none transparent;
+  vertical-align: middle;
+  font-size: inherit;
+  color: inherit;
+  box-sizing: content-box;
+}
+.comp-formui input[type="submit"] {
+  width: 100%;
+  background-color: #333;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 1rem;
+}
+.comp-formui input[type="submit"]:hover {
+  background-color: #fff;
+  border-color: #333;
+  color: #333;
+}
+.comp-formui .line .body input,
+.comp-formui .line .body select,
+.comp-formui .line .body textarea {
+  width: 100%;
+  padding: .5rem;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-top: .25rem;
+  border: solid 1px #ddd;
+}
+@media (max-width: 990px) {
+.comp-formui {
+}
+}
+@media (min-width: 990px) {
+.comp-formui .line {
+  display: table;
+  width: 100%;
+}
+.comp-formui .line .head,
+.comp-formui .line .body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.comp-formui .line .head {
+  width: 25%;
+}
+.comp-formui .line .body {
+  width: 75%;
+}
+}
+/* comp-page-title */
+.comp-page-title {
+  text-align: center;
+}
+.comp-page-title h1 {
+  margin-bottom: .5rem;
+}
+.comp-page-title h2 {
+  margin-top: .5rem;
+}
+/* post */
+.post-read {
+  line-height: 1.5;
+}
