@@ -1,9 +1,8 @@
 <footer>
   <div class="container">
     <div class="comp-page-title">
-      <h1>お問い合わせ</h1>
-      <hr>
-      <h2>CONTACT</h2>
+      <h3>お問い合わせ</h3>
+      <h4>CONTACT</h4>
     </div>
     <?php echo do_shortcode('[contact-form-7 id="15" title="コンタクトフォーム 1"]'); ?>
   </div>
