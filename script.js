@@ -1,5 +1,6 @@
 'use strict';
 
+const HEIGHT_HEADER = 60;
 const nextButton = $('#next_button');
 const prevButton = $('#prev_button');
 const calendarBody = $('#calendar tbody');
@@ -133,4 +134,16 @@ prevButton.click(function() {
 
 $(window).on('load', function(){
   createCalendar(current.year, current.month, current.date);
+});
+
+/* smooth scroll */
+$(function(){
+  $('a[href^="#"]').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top - HEIGHT_HEADER;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
 });

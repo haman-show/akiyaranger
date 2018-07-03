@@ -8,14 +8,21 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
 <section class="main-content special-content">
   <div class="container-special">
     <div class="top-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/hhf_top2.jpg);">
-      <h1>
-	<span>Humans</span>
-	<span>of</span>
-	<span>HAYAMA</span>
-	<span>FACTORY</span>
-      </h1>
+      <div class="text">
+        <h1>
+	  <span>Humans</span>
+	  <span>of</span>
+	  <span>HAYAMA</span>
+	  <span>FACTORY</span>
+        </h1>
+        <hr>
+        <p class="sub-title">葉山ファクトリーな人たち</p>
+      </div>
+      <div class="scroll">
+        <a href="#list-top" class="scroll-link">SCROLL</a>
+      </div>
     </div>
-    <div class="list clearfix">
+    <div class="list clearfix" id="list-top">
       <div class="box">
         <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_1.jpg" class="responsive-img"></div>
 	<div class="text">
