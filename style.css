@@ -503,11 +503,12 @@ footer {
 .special-content .top-img .text h1 {
   font-size: 3rem;
   margin: 0;
-}
-.special-content .top-img .text hr {
-  width: 75%;
+  border-bottom: solid 5px white;
+  display: inline-block;
+  padding-bottom: .2rem;
 }
 .special-content .top-img .text .sub-title {
+  margin-top: .75rem;
 }
 .special-content .list .box {
   float: left;
@@ -533,10 +534,10 @@ footer {
 }
 .special-content .list .box .text .holder ul li {
   color: white;
-  font-size: .8rem;
+  font-size: .75rem;
   padding-bottom: .5rem;
   margin: 0 auto;
-  width: 60%;
+  width: 75%;
 }
 .special-content .list .box .text .holder ul li:first-child {
   padding-top: .5rem;

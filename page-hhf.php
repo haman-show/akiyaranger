@@ -15,7 +15,6 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
 	  <span>HAYAMA</span>
 	  <span>FACTORY</span>
         </h1>
-        <hr>
         <p class="sub-title">葉山ファクトリーな人たち</p>
       </div>
       <div class="scroll">
