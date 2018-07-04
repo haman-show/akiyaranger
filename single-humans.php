@@ -10,7 +10,7 @@
           <p class="sub-title">Ranger</p>
           <h1><?php the_title(); ?></h1>
           <div class="text-read">
-            2017年からレンジャースタート<br>ウボォーギンと共に旅団の特攻役を務める居合いの達人。半径4mの「円」を使う。
+            <?php echo get_post_meta($post->ID, 'human_information_1', true); ?>
           </div>
         </div>
       </div>
