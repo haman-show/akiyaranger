@@ -22,7 +22,7 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
       </div>
     </div>
     <div class="list clearfix" id="list-top">
-      <div class="box">
+      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
         <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_1.jpg" class="responsive-img"></div>
 	<div class="text">
           <div class="holder">
@@ -32,8 +32,8 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
             </ul>
           </div>
         </div>
-      </div>
-      <div class="box">
+      </a>
+      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
         <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_2.jpg" class="responsive-img"></div>
 	<div class="text">
           <div class="holder">
@@ -43,8 +43,8 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
             </ul>
           </div>
         </div>
-      </div>
-      <div class="box">
+      </a>
+      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
         <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_3.jpg" class="responsive-img"></div>
 	<div class="text">
           <div class="holder">
@@ -54,8 +54,8 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
             </ul>
           </div>
         </div>
-      </div>
-      <div class="box">
+      </a>
+      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
         <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_4.jpg" class="responsive-img"></div>
 	<div class="text">
           <div class="holder">
@@ -65,8 +65,8 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
             </ul>
           </div>
         </div>
-      </div>
-      <div class="box">
+      </a>
+      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
         <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_5.jpg" class="responsive-img"></div>
 	<div class="text">
           <div class="holder">
@@ -76,8 +76,8 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
             </ul>
           </div>
         </div>
-      </div>
-      <div class="box">
+      </a>
+      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
         <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_6.jpg" class="responsive-img"></div>
 	<div class="text">
           <div class="holder">
@@ -87,8 +87,8 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
             </ul>
           </div>
         </div>
-      </div>
-      <div class="box">
+      </a>
+      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
         <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_1.jpg" class="responsive-img"></div>
 	<div class="text">
           <div class="holder">
@@ -98,8 +98,8 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
             </ul>
           </div>
         </div>
-      </div>
-      <div class="box">
+      </a>
+      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
         <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_2.jpg" class="responsive-img"></div>
 	<div class="text">
           <div class="holder">
@@ -109,8 +109,8 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
             </ul>
           </div>
         </div>
-      </div>
-      <div class="box">
+      </a>
+      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
         <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_3.jpg" class="responsive-img"></div>
 	<div class="text">
           <div class="holder">
@@ -120,8 +120,8 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
             </ul>
           </div>
         </div>
-      </div>
-      <div class="box">
+      </a>
+      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
         <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_4.jpg" class="responsive-img"></div>
 	<div class="text">
           <div class="holder">
@@ -131,8 +131,8 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
             </ul>
           </div>
         </div>
-      </div>
-      <div class="box">
+      </a>
+      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
         <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_5.jpg" class="responsive-img"></div>
 	<div class="text">
           <div class="holder">
@@ -142,8 +142,8 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
             </ul>
           </div>
         </div>
-      </div>
-      <div class="box">
+      </a>
+      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
         <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_6.jpg" class="responsive-img"></div>
 	<div class="text">
           <div class="holder">
@@ -154,7 +154,7 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
           </div>
         </div>
       </div>
-    </div>
+    </a>
   </div>
 </section>
 <?php get_footer(); ?>

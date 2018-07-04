@@ -515,6 +515,7 @@ footer {
   margin-top: .75rem;
 }
 .special-content .list .box {
+  display: block;
   float: left;
   position: relative;
 }
