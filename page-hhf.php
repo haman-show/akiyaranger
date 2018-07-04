@@ -7,7 +7,7 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
 <?php get_header(); ?>
 <section class="main-content special-content">
   <div class="container-special">
-    <div class="top-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/hhf_top2.jpg);">
+    <div class="top-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/hhf_top2.jpg);" id="para1">
       <div class="text">
         <h1>
 	  <span>Humans</span>
@@ -28,7 +28,7 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
           <div class="holder">
             <ul>
               <li>コーヒーレンジャー</li>
-              <li>ミスター葉山ファクトリー</li>
+              <li>究極のコーヒー焙煎</li>
             </ul>
           </div>
         </div>
@@ -50,7 +50,7 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
           <div class="holder">
             <ul>
               <li>パンプキンレンジャー</li>
-              <li>ママアフリカ</li>
+              <li>みんなを笑顔にする</li>
             </ul>
           </div>
         </div>
@@ -61,7 +61,7 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
           <div class="holder">
             <ul>
               <li>チャレンジャー</li>
-              <li>廃材クリエイター</li>
+              <li>スムーズなインパクトドライバー</li>
             </ul>
           </div>
         </div>
@@ -72,7 +72,7 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
           <div class="holder">
             <ul>
               <li>オーロラレンジャー</li>
-              <li>カラーセラピスト</li>
+              <li>唯一無二の塗装</li>
             </ul>
           </div>
         </div>
