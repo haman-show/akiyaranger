@@ -4,10 +4,18 @@
 <section class="main-content single-humans">
   <div class="container">
     <div class="upper">
-      <div class="photo"><?php the_post_thumbnail('full'); ?></div>
+      <div class="photo">
+        <?php if (has_post_thumbnail()) { ?>
+	<?php the_post_thumbnail('full'); ?>
+        <?php } else { ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/no_photo.gif" class="responsive-img">
+        <?php } ?>
+      </div>
       <div class="text">
         <div class="block">
-          <p class="sub-title">Ranger</p>
+	  <p class="sub-title">
+            <?php echo get_post_meta($post->ID, 'human_name', true); ?> Ranger
+          </p>
           <h1><?php the_title(); ?></h1>
           <div class="text-read">
             <?php echo get_post_meta($post->ID, 'human_information_1', true); ?>

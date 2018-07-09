@@ -28,17 +28,23 @@ function create_post_type() {
 add_action( 'init', 'create_post_type' );
 
 function add_human_fields() {
-  add_meta_box( 'human_setting', '人の情報', 'insert_human_fields', 'humans', 'normal');
+  add_meta_box( 'human_setting', '本文以外の要素', 'insert_human_fields', 'humans', 'normal');
 }
 add_action('admin_menu', 'add_human_fields');
  
 function insert_human_fields() {
   global $post;
+  echo 'レンジャーネーム(英)：<input type="text" name="human_name" value="'.get_post_meta($post->ID, 'human_catch', true).'" size="50" /><br>';
   echo 'キャッチコピー：<input type="text" name="human_catch" value="'.get_post_meta($post->ID, 'human_catch', true).'" size="50" /><br>';
-  echo 'その1：<br><textarea name="human_information_1" rows="10" cols="50">'.get_post_meta($post->ID, 'human_information_1', true).'</textarea>';
+  echo '枠の中の説明文：<br><textarea name="human_information_1" rows="10" cols="50">'.get_post_meta($post->ID, 'human_information_1', true).'</textarea>';
 }
 
 function save_human_fields( $post_id ) {
+  if(!empty($_POST['human_name'])){
+    update_post_meta($post_id, 'human_name', $_POST['human_name'] );
+  }else{
+    delete_post_meta($post_id, 'human_name');
+  }
   if(!empty($_POST['human_catch'])){
     update_post_meta($post_id, 'human_catch', $_POST['human_catch'] );
   }else{
