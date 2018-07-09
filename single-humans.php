@@ -4,7 +4,7 @@
 <section class="main-content single-humans">
   <div class="container">
     <div class="upper">
-      <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/example_1.jpg" class="responsive-img"></div>
+      <div class="photo"><?php the_post_thumbnail('full'); ?></div>
       <div class="text">
         <div class="block">
           <p class="sub-title">Ranger</p>

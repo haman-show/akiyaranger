@@ -34,10 +34,16 @@ add_action('admin_menu', 'add_human_fields');
  
 function insert_human_fields() {
   global $post;
+  echo 'キャッチコピー：<input type="text" name="human_catch" value="'.get_post_meta($post->ID, 'human_catch', true).'" size="50" /><br>';
   echo 'その1：<br><textarea name="human_information_1" rows="10" cols="50">'.get_post_meta($post->ID, 'human_information_1', true).'</textarea>';
 }
 
 function save_human_fields( $post_id ) {
+  if(!empty($_POST['human_catch'])){
+    update_post_meta($post_id, 'human_catch', $_POST['human_catch'] );
+  }else{
+    delete_post_meta($post_id, 'human_catch');
+  }
   if(!empty($_POST['human_information_1'])){
     update_post_meta($post_id, 'human_information_1', $_POST['human_information_1'] );
   }else{

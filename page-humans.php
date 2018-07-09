@@ -22,139 +22,26 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
       </div>
     </div>
     <div class="list clearfix" id="list-top">
-      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
-        <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_1.jpg" class="responsive-img"></div>
+      <?php query_posts('post_type=humans'); ?>
+      <?php if(have_posts()): while(have_posts()): the_post(); ?>
+      <a href="<?php the_permalink(); ?>" class="box">
+	<div class="photo">
+          <?php if (has_post_thumbnail()) { ?>
+	  <?php the_post_thumbnail('full'); ?>
+          <?php } else { ?>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/no_photo.gif" class="responsive-img">
+          <?php } ?>
+        </div>
 	<div class="text">
           <div class="holder">
             <ul>
-              <li>コーヒーレンジャー</li>
-              <li>究極のコーヒー焙煎</li>
+              <li><?php the_title(); ?></li>
+	      <li><?php echo get_post_meta($post->ID, 'human_catch', true); ?></li>
             </ul>
           </div>
         </div>
       </a>
-      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
-        <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_2.jpg" class="responsive-img"></div>
-	<div class="text">
-          <div class="holder">
-            <ul>
-              <li>アースレンジャー</li>
-              <li>葉山キッチン代表</li>
-            </ul>
-          </div>
-        </div>
-      </a>
-      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
-        <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_3.jpg" class="responsive-img"></div>
-	<div class="text">
-          <div class="holder">
-            <ul>
-              <li>パンプキンレンジャー</li>
-              <li>みんなを笑顔にする</li>
-            </ul>
-          </div>
-        </div>
-      </a>
-      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
-        <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_4.jpg" class="responsive-img"></div>
-	<div class="text">
-          <div class="holder">
-            <ul>
-              <li>チャレンジャー</li>
-              <li>スムーズなインパクトドライバー</li>
-            </ul>
-          </div>
-        </div>
-      </a>
-      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
-        <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_5.jpg" class="responsive-img"></div>
-	<div class="text">
-          <div class="holder">
-            <ul>
-              <li>オーロラレンジャー</li>
-              <li>唯一無二の塗装</li>
-            </ul>
-          </div>
-        </div>
-      </a>
-      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
-        <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_6.jpg" class="responsive-img"></div>
-	<div class="text">
-          <div class="holder">
-            <ul>
-              <li>ピンクレンジャー</li>
-              <li>空家レンジャー代表</li>
-            </ul>
-          </div>
-        </div>
-      </a>
-      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
-        <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_1.jpg" class="responsive-img"></div>
-	<div class="text">
-          <div class="holder">
-            <ul>
-              <li>コーヒーレンジャー</li>
-              <li>ミスター葉山ファクトリー</li>
-            </ul>
-          </div>
-        </div>
-      </a>
-      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
-        <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_2.jpg" class="responsive-img"></div>
-	<div class="text">
-          <div class="holder">
-            <ul>
-              <li>アースレンジャー</li>
-              <li>葉山キッチン代表</li>
-            </ul>
-          </div>
-        </div>
-      </a>
-      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
-        <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_3.jpg" class="responsive-img"></div>
-	<div class="text">
-          <div class="holder">
-            <ul>
-              <li>パンプキンレンジャー</li>
-              <li>ママアフリカ</li>
-            </ul>
-          </div>
-        </div>
-      </a>
-      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
-        <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_4.jpg" class="responsive-img"></div>
-	<div class="text">
-          <div class="holder">
-            <ul>
-              <li>チャレンジャー</li>
-              <li>廃材クリエイター</li>
-            </ul>
-          </div>
-        </div>
-      </a>
-      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
-        <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_5.jpg" class="responsive-img"></div>
-	<div class="text">
-          <div class="holder">
-            <ul>
-              <li>オーロラレンジャー</li>
-              <li>カラーセラピスト</li>
-            </ul>
-          </div>
-        </div>
-      </a>
-      <a href="<?php echo home_url('/humans/001/'); ?>" class="box">
-        <div class="photo"><img src="<?php echo get_template_directory_uri(); ?>/images/human_6.jpg" class="responsive-img"></div>
-	<div class="text">
-          <div class="holder">
-            <ul>
-              <li>ピンクレンジャー</li>
-              <li>空家レンジャー代表</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </a>
+      <?php endwhile; endif; ?>
   </div>
 </section>
 <?php get_footer(); ?>
