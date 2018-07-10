@@ -34,7 +34,7 @@ add_action('admin_menu', 'add_human_fields');
  
 function insert_human_fields() {
   global $post;
-  echo 'レンジャーネーム(英)：<input type="text" name="human_name" value="'.get_post_meta($post->ID, 'human_catch', true).'" size="50" /><br>';
+  echo 'レンジャーネーム(英)：<input type="text" name="human_name" value="'.get_post_meta($post->ID, 'human_name', true).'" size="50" /><br>';
   echo 'キャッチコピー：<input type="text" name="human_catch" value="'.get_post_meta($post->ID, 'human_catch', true).'" size="50" /><br>';
   echo '枠の中の説明文：<br><textarea name="human_information_1" rows="10" cols="50">'.get_post_meta($post->ID, 'human_information_1', true).'</textarea>';
 }

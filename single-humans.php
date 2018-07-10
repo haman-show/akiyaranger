@@ -26,6 +26,7 @@
     <div class="text-read main">
       <?php the_content(); ?>
     </div>
+    <a href="<?php echo home_url('/humans'); ?>" class="btn-back">一覧にもどる</a>
   </div>
 </section>
 <?php }} ?>
