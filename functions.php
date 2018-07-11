@@ -2,6 +2,12 @@
 // アイキャッチ画像を有効
 add_theme_support('post-thumbnails');   // カスタム投稿タイプ humans で thumbnail を使うので追記
 
+function replaceImagePath($arg) {
+  $content = str_replace('"img/', '"' . get_bloginfo('template_directory') . '/img/', $arg);
+  return $content;
+}  
+add_action('the_content', 'replaceImagePath');
+
 // カスタム投稿タイプ作成
 function create_post_type() {
   $humansSupports = [
