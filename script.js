@@ -159,3 +159,19 @@ $(function(){
 	});
 });
 
+/* scroll animation */
+$(window).on('load scroll', function() {
+  $('.special-content .list .box').each(function(i) {
+    add_class_in_scrolling($(this));
+  });
+});
+ 
+// スクロールで要素が表示された時にclassを付与する
+function add_class_in_scrolling(target) {
+  var winScroll = $(window).scrollTop();
+  var winHeight = $(window).height();
+  var scrollPos = winScroll + winHeight;
+  if(target.offset().top < scrollPos) {
+      target.addClass('is-show');
+  }
+}

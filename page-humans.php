@@ -29,7 +29,7 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
           <?php if (has_post_thumbnail()) { ?>
 	  <?php the_post_thumbnail('full'); ?>
           <?php } else { ?>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/no_photo.gif" class="responsive-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/nophoto.gif" class="responsive-img">
           <?php } ?>
         </div>
 	<div class="text">

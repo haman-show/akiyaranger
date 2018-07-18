@@ -606,10 +606,27 @@ footer .sitemap ul li:last-child {
 .special-content .top-img .text .sub-title {
   margin-top: .75rem;
 }
+@media (max-width: 990px) {
+.special-content .top-img {
+  height: 667px;
+}
+}
+@media (min-width: 990px) {
+.special-content .top-img {
+  height: 100vh;
+}
+}
 .special-content .list .box {
   display: block;
   float: left;
   position: relative;
+  opacity: 0;
+  padding-top: 3rem;
+  transition: all 1s;
+}
+.special-content .list .box.is-show {
+  opacity: 1;
+  padding-top: 0;
 }
 .special-content .list .box .text {
   position: absolute;
@@ -736,10 +753,10 @@ footer .sitemap ul li:last-child {
   position: relative;
 }
 .single-humans .upper .photo {
-  width: 75%;
+  width: 52%;
 }
 .single-humans .upper .text {
-  width: 40%;
+  width: 52%;
   position: absolute;
   top: 2rem;
   right: 0;
