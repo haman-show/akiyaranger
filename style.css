@@ -570,7 +570,7 @@ footer .sitemap ul li:last-child {
   display: inline-block;
   padding: 10px 10px 20px;
   position: relative;
-  color: #fff;
+  color: black;
   font-size: 11px;
   letter-spacing: 0.1em;
 }
@@ -582,8 +582,8 @@ footer .sitemap ul li:last-child {
   height: 10px;
   left: 50%;
   bottom: 5px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
   transform-origin: 0 100%;
   transform: rotate(-45deg);
   animation: scrBounce 4s ease 0s infinite;
@@ -591,15 +591,15 @@ footer .sitemap ul li:last-child {
 .special-content .top-img .text {
   display: table-cell;
   margin: 0;
-  color: white;
   width: 100%;
   text-align: center;
   vertical-align: middle;
+  background: rgba(255, 255, 255, .30);
 }
 .special-content .top-img .text h1 {
   font-size: 3rem;
   margin: 0;
-  border-bottom: solid 5px white;
+  border-bottom: solid 5px black;
   display: inline-block;
   padding-bottom: .2rem;
 }
@@ -621,8 +621,8 @@ footer .sitemap ul li:last-child {
   float: left;
   position: relative;
   opacity: 0;
-  padding-top: 3rem;
-  transition: all 1s;
+  padding-top: 10rem;
+  transition: all .75s;
 }
 .special-content .list .box.is-show {
   opacity: 1;
@@ -644,7 +644,6 @@ footer .sitemap ul li:last-child {
   position: absolute;
   text-align: center;
   width: 100%;
-  bottom: .25rem;
 }
 .special-content .list .box .text .holder ul li {
   color: white;
@@ -667,10 +666,16 @@ footer .sitemap ul li:last-child {
 .special-content .list .box {
   width: 100%;
 }
+.special-content .list .box .text .holder ul {
+  top: 56%;
+}
 }
 @media (min-width: 660px) {
 .special-content .list .box {
   width: 50%;
+}
+.special-content .list .box .text .holder ul {
+  top: 50%;
 }
 }
 @media (max-width: 990px) {
@@ -692,6 +697,9 @@ footer .sitemap ul li:last-child {
 .special-content .list .box:hover .photo img {
 	transform: scale(1.1);
 	transition-duration: 0.3s;
+}
+.special-content .list .box .text .holder ul {
+  top: 36%;
 }
 }
 /* single-humans */

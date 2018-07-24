@@ -1,4 +1,7 @@
 <?php
+// title タグ
+add_theme_support( 'title-tag' );
+
 // アイキャッチ画像を有効
 add_theme_support('post-thumbnails');   // カスタム投稿タイプ humans で thumbnail を使うので追記
 

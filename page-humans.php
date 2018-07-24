@@ -7,7 +7,7 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
 <?php get_header(); ?>
 <section class="main-content special-content">
   <div class="container-special">
-    <div class="top-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/hhf_top2.jpg);" id="para1">
+    <div class="top-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/hhf_top3.jpg);" id="para1">
       <div class="text">
         <h1>
 	  <span>Humans</span>
@@ -15,7 +15,6 @@ Template Name: Humans of HAYAMA FACTORY のテンプレート
 	  <span>HAYAMA</span>
 	  <span>FACTORY</span>
         </h1>
-        <p class="sub-title">葉山ファクトリーな人たち</p>
       </div>
       <div class="scroll">
         <a href="#list-top" class="scroll-link">SCROLL</a>

@@ -1,9 +1,46 @@
 <!DOCTYPE html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122652960-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122652960-1');
+  </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge7">
   <meta name="viewport" content="width=device-width initial-scale=1">
   <title>空家レンジャー</title>
+  <?php if(is_front_page()):/*ホームが表示されている場合*/ ?>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<?php echo home_url('/') ?>">
+  <meta property="og:title" content="<?php bloginfo('name') ?>">
+  <meta property="og:image" content="<?php echo home_url('②画像のURL') ?>">
+  <?php else:/*ホーム以外のページが表示されている場合*/ ?>
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="<?php the_permalink() ?>">
+  <meta property="og:title" content="<?php wp_title('', true, 'right'); ?> | <?php bloginfo('name') ?>">
+  <?php if ( has_post_thumbnail() ) {
+    $image_id = get_post_thumbnail_id ();
+    $image_url = wp_get_attachment_image_src ($image_id, true);
+    $ogp_image_path = $image_url[0];
+  } else {
+    $ogp_image_path = 'アイキャッチ画像がない場合のURL';
+  } ?>
+  <meta property="og:image" content="<?php echo $ogp_image_path; ?>">
+  <?php endif; ?>
+  <!--共通-->
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name"  content="<?php bloginfo() ?>">
+  <meta property="og:description" content="<?php bloginfo('description') ?>">
+  <!--Facebook-->
+  <meta property="fb:app_id" content="886486831548457">
+  <meta property="article:publisher" content="https://www.facebook.com/akiyaranger/">
+  <!--twitter-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@akiyaranger">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
