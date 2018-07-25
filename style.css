@@ -195,6 +195,23 @@ section .container {
   margin: 0 auto;
 }
 }
+/* flag */
+.flag .left,
+.flag .right {
+  position: fixed;
+  top: 60px;
+  z-index: 97;
+}
+.flag .left {
+  left: 0;
+}
+.flag .right {
+  right: 0;
+}
+/* top */
+.top-img {
+  padding-top: 200px;
+}
 /* main-content */
 .main-content {
   padding-top: 60px;

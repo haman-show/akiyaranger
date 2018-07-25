@@ -17,7 +17,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo home_url('/') ?>">
   <meta property="og:title" content="<?php bloginfo('name') ?>">
-  <meta property="og:image" content="<?php echo home_url('②画像のURL') ?>">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/ogp_default.jpg">
   <?php else:/*ホーム以外のページが表示されている場合*/ ?>
   <meta property="og:type" content="article">
   <meta property="og:url" content="<?php the_permalink() ?>">
@@ -27,7 +27,7 @@
     $image_url = wp_get_attachment_image_src ($image_id, true);
     $ogp_image_path = $image_url[0];
   } else {
-    $ogp_image_path = 'アイキャッチ画像がない場合のURL';
+    $ogp_image_path = '<?php echo get_template_directory_uri(); ?>/images/ogp_default.jpg';
   } ?>
   <meta property="og:image" content="<?php echo $ogp_image_path; ?>">
   <?php endif; ?>
@@ -94,3 +94,7 @@
     <div class="login"></div>
   </div>
 </header>
+<div class="flag">
+  <div class="left"><img src="<?php echo get_template_directory_uri(); ?>/images/flag_left.png" width="256" height="135"></div>
+  <div class="right"><img src="<?php echo get_template_directory_uri(); ?>/images/flag_right.png" width="191" height="158"></div>
+</div>
