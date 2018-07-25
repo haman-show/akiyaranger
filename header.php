@@ -27,7 +27,7 @@
     $image_url = wp_get_attachment_image_src ($image_id, true);
     $ogp_image_path = $image_url[0];
   } else {
-    $ogp_image_path = '<?php echo get_template_directory_uri(); ?>/images/ogp_default.jpg';
+    $ogp_image_path = get_template_directory_uri() . '/images/ogp_default.jpg';
   } ?>
   <meta property="og:image" content="<?php echo $ogp_image_path; ?>">
   <?php endif; ?>
