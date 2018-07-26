@@ -208,8 +208,8 @@ section .container {
 .flag .right {
   right: 0;
 }
-/* top */
-.top-img {
+/* front */
+.front-img {
   padding-top: 200px;
 }
 /* main-content */

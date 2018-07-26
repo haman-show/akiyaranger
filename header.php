@@ -94,7 +94,3 @@
     <div class="login"></div>
   </div>
 </header>
-<div class="flag">
-  <div class="left"><img src="<?php echo get_template_directory_uri(); ?>/images/flag_left.png" width="256" height="135"></div>
-  <div class="right"><img src="<?php echo get_template_directory_uri(); ?>/images/flag_right.png" width="191" height="158"></div>
-</div>
