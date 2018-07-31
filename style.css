@@ -208,9 +208,26 @@ section .container {
 .flag .right {
   right: 0;
 }
+@media (max-width: 990px) {
+.flag .left img {
+  width: 128px;
+  height: auto;
+}
+.flag .right img {
+  width: 95px;
+  height: auto;
+}
+}
 /* front */
+@media (max-width: 990px) {
+.front-img {
+  padding-top: 130px;
+}
+}
+@media (min-width: 990px) {
 .front-img {
   padding-top: 200px;
+}
 }
 /* main-content */
 .main-content {
