@@ -82,6 +82,11 @@
               <hr>
               <div class="eng">HAYAMA KITCHEN</div>
             </a>
+            <a href="<?php echo home_url('/zushicoworkingbar'); ?>">
+              <div class="jp">逗子コワーキングバー</div>
+              <hr>
+              <div class="eng">ZUSHI COWORKINGBAR</div>
+            </a>
           </nav>
         </div>
       </div>
