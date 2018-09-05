@@ -564,7 +564,8 @@ footer .sitemap ul li:last-child {
     background-color: red;
   }
 }
-/* google maps */
+/* google */
+.google-spreadsheet,
 .google-maps {
   position: relative;
   padding-bottom: 50%;
@@ -572,6 +573,7 @@ footer .sitemap ul li:last-child {
   overflow: hidden;
   margin-bottom: 1rem;
 }
+.google-spreadsheet iframe,
 .google-maps iframe {
   position: absolute;
   top: 0;
