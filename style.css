@@ -20,6 +20,10 @@ ul,dl,dd {
   padding: 0;
   margin: 0;
 }
+table {
+  border-spacing: 0;
+  width: 100%;
+}
 /* common */
 body {
   font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
@@ -830,4 +834,44 @@ footer .sitemap ul li:last-child {
 .single-humans .main_holder ul li:last-child {
   padding-left: 2%;
 }
+}
+/* price-list */
+.price-list .fee-structure {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.price-list .text-head {
+  text-align: center;
+  font-size: 1rem;
+  border-bottom: solid 1px #ddd;
+  margin: 0;
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+}
+.price-list .text-read {
+  margin-bottom: 1rem;
+}
+.price-list table {
+  border-left: solid 1px #ddd;
+  border-top: solid 1px #ddd;
+  margin-bottom: 2rem;
+}
+.price-list table th,
+.price-list table td {
+  padding: .5rem;
+  border-right: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  line-height: 1.5;
+}
+.price-list table td {
+  text-align: right;
+}
+.price-list table th:nth-child(1),
+.price-list table td:nth-child(1),
+.price-list table th:nth-child(2),
+.price-list table td:nth-child(2) {
+  width: 25%;
 }
