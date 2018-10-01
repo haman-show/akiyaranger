@@ -83,7 +83,7 @@
               <div class="eng">HAYAMA KITCHEN</div>
             </a>
             <a href="<?php echo home_url('/coworkingbar'); ?>">
-              <div class="jp">逗子コワーキングバー</div>
+              <div class="jp">逗子コワーキングスペース〇〇〇</div>
               <hr>
               <div class="eng">ZUSHI COWORKINGBAR</div>
             </a>
